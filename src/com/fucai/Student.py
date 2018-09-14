@@ -2,6 +2,7 @@
 # -*- coding:utf-8 -*-
 
 ' student '
+import json
 
 __author__= 'fucai'
 
@@ -9,7 +10,7 @@ __author__= 'fucai'
 class Student(object):
 
     #限制实例属性，只允许对Strudent 实例添加name 和age属性
-    __slots__ = ('__name', '__score')
+    # __slots__ = ('__name', '__score')
 
     def __init__(self, name, score):
         self.__name = name
@@ -52,3 +53,6 @@ if __name__ == '__main__':
     print(bart.name)
     print(len(bart))
     print(bart)
+    #使用__slots__的时候，则class不是__dict__
+    print(json.dumps(bart, default=lambda obj: obj.__dict__))
+
