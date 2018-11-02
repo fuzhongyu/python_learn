@@ -59,6 +59,8 @@ person('fuc', '25', 1, 2, city='hangzhou', job='cxy')
 
 person3('fuc2', '25', city=None, job=None, pow=12)
 
+person4('fuc4', 25, city='hangzhou', job='python')
+
 for i, v in enumerate(arr1):
     print(i)
 

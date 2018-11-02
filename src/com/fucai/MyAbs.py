@@ -20,6 +20,10 @@ def person2(name, age, **kz):
     print(name, age, kz)
 
 
+def person4(name, age, *, city, job):
+    print(name, age, city, job)
+
+
 def person(name, age, *args, city, job):
     print(name, age, args, city, job)
 
