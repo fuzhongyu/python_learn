@@ -52,6 +52,10 @@ print(my_student(1, 'fc'))
 dic = {'name': 'fucai', 'age': 25}
 se = set([1, 2, 2])
 print(dic, se)
+#获取不存在的属性，会报错
+print(dic['sex'])
+#使用get请求，返回none
+print(dic.get('sex'))
 
 person2('f', 24, city='hz', province='zj')
 

@@ -9,11 +9,11 @@ __author__ = 'fucai'
 
 @qqbotslot
 def onQQMessage(bot, contact, member, content):
-    if 'XXX' in contact.name:
+    if '赵方' in contact.name:
         if '/Emoji128054' in content or '狗' in content or 'dog' in content:
-            bot.SendTo(contact, 'message1')
+            bot.SendTo(contact, '赵方你这个狗币')
         elif '娘' in content or 'niang' in content or '炮' in content or 'pao' in content:
-            bot.SendTo(contact, 'message2')
+            bot.SendTo(contact, '赵方你这个小娘炮')
 
 
 if __name__ == '__main__':
