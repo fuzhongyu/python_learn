@@ -11,7 +11,18 @@ from functools import reduce
 
 from src.com.fucai.MyAbs import *
 
+'''
+多行注释方式
+'''
+
+
 print('hello', 'world')
+
+helloWorld = """Hello
+World
+"""
+print(helloWorld)
+
 # name = input()
 # print(name)
 a = 100
