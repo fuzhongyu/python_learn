@@ -3,6 +3,7 @@
 
 ' student '
 import json
+from types import MethodType
 
 __author__= 'fucai'
 
@@ -55,4 +56,5 @@ if __name__ == '__main__':
     print(bart)
     #使用__slots__的时候，则class不是__dict__
     print(json.dumps(bart, default=lambda obj: obj.__dict__))
+
 
