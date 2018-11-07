@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 
 ' hello world '
+from datetime import datetime
+
 from src.com.fucai.Student import Student
 
 __author__ = 'fucai'
@@ -64,7 +66,7 @@ dic = {'name': 'fucai', 'age': 25}
 se = set([1, 2, 2])
 print(dic, se)
 #获取不存在的属性，会报错
-print(dic['sex'])
+# print(dic['sex'])
 #使用get请求，返回none
 print(dic.get('sex'))
 
@@ -166,6 +168,10 @@ print(f.__name__)
 
 # type函数判断类型
 print(type(123) == int)
+
+now_time = datetime.now()
+print(now_time)
+print(datetime.timestamp(now_time))
 
 
 
